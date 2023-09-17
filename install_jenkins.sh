@@ -28,6 +28,7 @@ sudo apt install maven -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 
+
 # print jenkins Password
 echo 'clearing screen...' && sleep 5
 clear
