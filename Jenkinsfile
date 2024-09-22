@@ -16,7 +16,7 @@ pipeline {
 
         stage('Deploy to Tomat Server') {
             steps {
-                sh deploy adapters:[tomcat9(credentialsId: 'ktomcatID', path: '', url: 'http://3.137.161.198:8080')], contextPath: 'app', war: '**/*.war'
+                deploy adapters:[tomcat9(credentialsId: 'ktomcatID', path: '', url: 'http://3.137.161.198:8080')], contextPath: 'app', war: '**/*.war'
             }
         }
 
